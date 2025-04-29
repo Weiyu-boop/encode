@@ -1,0 +1,20 @@
+# 忽略 fpga_project 里面的所有东西 
+fpga_project/**
+
+# 但是保留 .xpr 文件
+!fpga_project/*.xpr
+
+# 忽略 ip 目录下所有文件和子文件夹
+ip/**
+
+# 但保留 .xci 和 .coe 文件
+!ip/**/*.xci
+!ip/**/*.coe
+
+# 保留 ip 目录结构
+!ip/
+!ip/**/
+
+# 保留根目录的 README.md 和 .gitignore
+!README.md
+!.gitignore
